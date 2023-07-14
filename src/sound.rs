@@ -188,4 +188,5 @@ pub enum WORD {
     Pufferfish,
     Squid,
     GlowSquid = 106,
+    None,
 }

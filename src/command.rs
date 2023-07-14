@@ -1,3 +1,4 @@
+
 pub static mut COMMANDS: Vec<String> = Vec::new();
 
 #[macro_export]

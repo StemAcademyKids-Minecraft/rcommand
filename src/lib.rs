@@ -1,5 +1,5 @@
 pub mod command;
 pub mod sound;
 pub mod item;
-use command::{command};
-use sound::{WORD};
+use command::{command,delay};
+use sound::{WORD,playsound};
