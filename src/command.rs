@@ -34,3 +34,15 @@ pub fn command(comm: String) {
         COMMANDS.push(comm+"@:");
     }
 }
+
+pub fn get_commands() -> Vec<String> {
+    unsafe {
+        return COMMANDS.clone();
+    }
+}
+
+pub fn clear_commands() {
+    unsafe {
+        return COMMANDS.clear();
+    }
+}

@@ -1,3 +1,6 @@
 pub mod command;
 pub mod sound;
-use command::{COMMANDS,command};
+pub mod item;
+use command::{COMMANDS,command,get_commands,clear_commands};
+use sound::{WORD,playsound};
+use item::{Face,item};
