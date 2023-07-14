@@ -1,18 +1,7 @@
 
+
 pub static mut COMMANDS: Vec<String> = Vec::new();
 
-#[macro_export]
-macro_rules! command {
-    ($e:expr) => { $crate::command($e.to_string())};
-    ($fmt:expr, $($arg:tt)*) => { $crate::command(format!($fmt, $($arg)*))};
-}
-
-#[macro_export]
-macro_rules! delay {
-    ($e:expr) => {
-        $crate::delay($e)
-    };
-}
 
 
 
@@ -25,7 +14,7 @@ pub fn delay(tick: u32) {
     };
 }
 
-pub fn command(comm: String) {
+pub fn mcommand(comm: String) {
     unsafe {
         COMMANDS.push(comm+"@:");
     }

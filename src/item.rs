@@ -1,4 +1,5 @@
-use crate::{WORD, command,delay,playsound};
+use crate::{sound::WORD, command};
+
 
 pub enum Face {
     TOP = 0,
@@ -12,8 +13,7 @@ pub enum Face {
 pub fn item(comm: WORD,x:i32,y:i32,z:i32,facing:Face) {
     
     const summon:&str = "summon minecraft:item_frame ";
-    delay(0);
-    playsound(WORD::None);
+
 
     match comm {
         WORD::Sword => command!("{}~{} ~{} ~{} {{Facing:{},Invisible:1,Fixed:1b,Item:{{id:\"{}\",Count:1b}}}}",summon,x,y,z,facing as u32,"iron_sword"),

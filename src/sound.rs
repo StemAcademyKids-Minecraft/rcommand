@@ -1,11 +1,7 @@
 use num_derive::FromPrimitive;
 
 use crate::command;
-#[macro_export]
-macro_rules! playsound {
-    ($e:expr) => { $crate::playsound($e)};
-    ($fmt:expr, $($arg:tt)*) => { $crate::playsound(format!($fmt, $($arg)*))};
-}
+
 pub fn playsound(comm: WORD) {
     match comm {
         WORD::Sword => command!("playsound minecraft:tango.sword master @a ~ ~ ~"),

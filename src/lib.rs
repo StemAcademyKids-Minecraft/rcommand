@@ -1,5 +1,6 @@
-pub mod command;
+pub mod mmacro;
 pub mod sound;
 pub mod item;
-use command::{command,delay};
-use sound::{WORD,playsound};
+pub mod commands;
+
+use commands::mcommand;
