@@ -13,12 +13,7 @@ macro_rules! delay {
     };
 }
 
-#[inline]
-pub fn sleep_ms(ms: u64) {
-    use std::{thread, time};
-    let ms = time::Duration::from_millis(ms);
-    thread::sleep(ms);
-}
+
 
 pub fn delay(tick: u32) {
     //20tick = 1s
