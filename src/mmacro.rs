@@ -1,4 +1,12 @@
 
+use crate::commands;
+use crate::sound;
+
+use commands::mcommand;
+use commands::mdelay;
+use sound::mplaysound;
+
+
 #[macro_export]
 macro_rules! command {
     ($e:expr) => { $crate::commands::mcommand($e.to_string())};
