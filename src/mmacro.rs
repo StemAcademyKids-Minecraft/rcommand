@@ -22,6 +22,5 @@ macro_rules! delay {
 
 #[macro_export]
 macro_rules! playsound {
-    ($e:expr) => { $crate::sound::mplaysound($e)};
-    ($fmt:expr, $($arg:tt)*) => { $crate::mplaysound(format!($fmt, $($arg)*))};
+    ($e:expr,$t:expr) => { $crate::sound::mplaysound($e,$t)};
 }
