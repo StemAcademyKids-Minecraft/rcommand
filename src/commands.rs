@@ -5,7 +5,8 @@ pub static mut COMMANDS: Vec<String> = Vec::new();
 
 
 
-pub fn delay(tick: u32) {
+
+pub fn mdelay(tick: u32) {
     //20tick = 1s
     let delay = "&dly".to_string() + &tick.to_string();
     

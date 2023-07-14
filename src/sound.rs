@@ -1,8 +1,9 @@
 use num_derive::FromPrimitive;
 
+use crate::commands;
 use crate::command;
 
-pub fn playsound(comm: WORD) {
+pub fn mplaysound(comm: WORD) {
     match comm {
         WORD::Sword => command!("playsound minecraft:tango.sword master @a ~ ~ ~"),
         WORD::Acacia => command!("playsound minecraft:tango.acacia master @a ~ ~ ~"),
