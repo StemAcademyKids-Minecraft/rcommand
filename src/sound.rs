@@ -69,6 +69,7 @@ pub fn mplaysound(comm: WORD,dis:isize) {
         WORD::Wood => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.wood master @s ~ ~ ~",dis),
         WORD::Zombie => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.zombie master @s ~ ~ ~",dis),
         WORD::Creeper => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.creeper master @s ~ ~ ~",dis),
+        WORD::Skelton => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.skelton master @s ~ ~ ~",dis),
         WORD::Spider => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.spider master @s ~ ~ ~",dis),
         WORD::CaveSpider => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.cave_spider master @s ~ ~ ~",dis),
         WORD::Witch => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.witch master @s ~ ~ ~",dis),
