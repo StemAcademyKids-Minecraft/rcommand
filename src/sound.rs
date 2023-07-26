@@ -78,6 +78,7 @@ pub fn mplaysound(comm: WORD,dis:isize) {
         WORD::ZombieVillager => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.zombie_villager master @s ~ ~ ~",dis),
         WORD::Drowned => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.drowned master @s ~ ~ ~",dis),
         WORD::Guardian => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.guardian master @s ~ ~ ~",dis),
+        WORD::ElderGuardian => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.elder_guardian master @s ~ ~ ~",dis),
         WORD::Husk => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.husk master @s ~ ~ ~",dis),
         WORD::Stray => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.stray master @s ~ ~ ~",dis),
         WORD::ChickenJockey => command!("execute as @a[distance=0..{}] at @s run playsound minecraft:tango.chicken_jockey master @s ~ ~ ~",dis),
