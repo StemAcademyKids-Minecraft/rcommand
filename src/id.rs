@@ -1,7 +1,7 @@
 use crate::{sound::WORD, command, item::Face};
 
 pub struct MineCarftId<'a>{
-    id:&'a str,
+    pub id:&'a str,
 }
 
 
